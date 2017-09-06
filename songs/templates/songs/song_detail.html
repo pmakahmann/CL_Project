@@ -1,0 +1,20 @@
+<body>
+    <header>
+        <h2><a href="{% url 'songs:list' %}">Song List</a></h2>
+    </header>
+</body>
+
+<table>
+<tr>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>Date</th>
+</tr>
+
+    <tr>
+        <td>{{ song.title }}</td>
+        <td>{{ song.artist }}</td>
+        <td>{{ song.composition_date }}</td>
+    </tr>
+
+</table> 
