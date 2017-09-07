@@ -1,16 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
 <table>
-    <tr>
-        <th>Title</th>
-        <th>Artist</th> 
-        <th>Date</th>
+    <tr class="row">
+        <th class="col col-lg-4 col-md-4">Title</th>
+        <th class="col col-lg-4 col-md-4">Artist</th>
+        <th class="col col-lg-4 col-md-4">Date</th>
     </tr>
-    
+
     {% for song in songs %}
-        <tr>
-            <td>{{ song.title }}</td>
-            <td>{{ song.artist }}</td>
-            <td>{{ song.composition_date }}</td>
+        <tr class="row">
+            <td class="col col-lg-4 col-md-4">{{ song.title }}</td>
+            <td class="col col-lg-4 col-md-4">{{ song.artist }}</td>
+            <td class="col col-lg-4 col-md-4">{{ song.composition_date }}</td>
+            <!-- <a href="{% url 'songs:update' pk=song.pk %}">Edit</a> -->
         </tr>
     {% endfor %}
-    
-</table> 
+
+</table>
+
+{% endblock %}

@@ -1,9 +1,12 @@
 {% extends "layout.html" %}
 
-{% block title %} RMC SOTD List {% endblock %}
+{% block title %} Song a Day {% endblock %}
 
 {% block content %}
-    <div class"row">
-        <h1>RMC "Song a Day" List</h1>
+    <div>
+        <h1>Rogue Middle Child Presents:</h1>
+        <h2>Song a Day</h2>
+        <p>An adventure in Python and Django</p>
+        <a href="{% url 'songs:list' %}">Enter Here</a>
     </div>
 {% endblock %}
