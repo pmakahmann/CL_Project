@@ -8,7 +8,7 @@
     <form method="POST" action="">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" class="button" value="Save"> <a href="{% url 'songs:list' %}">Cancel</a>
+        <input type="submit" class="button save" value="Save"> <a href="{% url 'songs:list' %}">Cancel</a>
     </form>
 </div>
 
