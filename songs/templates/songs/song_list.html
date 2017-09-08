@@ -19,6 +19,7 @@
             <td>{{ song.artist }}</td>
             <td>{{ song.composition_date }}</td>
             <td><a href="{% url 'songs:update' pk=song.pk %}">Edit</a></td>
+            <td><a href="{% url 'songs:delete' pk=song.pk %}">Delete</a></td>
         </tr>
     {% endfor %}
 
