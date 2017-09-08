@@ -2,10 +2,10 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="row">
+<div class="form-header">
     {{ block.super }}
-    <h1 class="col col-lg-4 col-md-3">{{ form.instance.title|default:"Add a New Song" }}</h1>
-    <form method="POST" action="">
+    <h1>{{ form.instance.title|default:"Add a New Song" }}</h1>
+    <form class="form-body" method="POST" action="">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" class="button save" value="Save"> <a href="{% url 'songs:list' %}">Cancel</a>

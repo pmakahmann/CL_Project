@@ -34,6 +34,11 @@ header {
   margin-bottom: 5px;
 }
 
+table {
+    text-align: left;
+		vertical-align: center;
+}
+
 .main-logo {
 	text-align: center;
 	display: block;
@@ -78,4 +83,20 @@ header {
   background-color: red;
   color: white;
   border-radius: 5px;
+}
+
+#list-table{
+	padding-left: 10px;
+}
+
+
+
+.form-header{
+	display: flex;
+	width: 400px;
+}
+
+.form-body{
+	display: flex;
+	width: 400px;
 }

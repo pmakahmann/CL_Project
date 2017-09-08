@@ -1,0 +1,6 @@
+1. Validate add new song to make sure fields are required.
+2. Style the table
+3. Add a login
+4. Refactor code and minify
+5. Remove Bootstrap if not used
+6. Create API to pull songs

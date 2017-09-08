@@ -6,4 +6,6 @@
 <p>Artist: {{ song.artist}}</p>
 <p>Date: {{ song.composition_date}}</p>
 
+<a href="{% url 'songs:list' %}">Back to the list!</a>
+
 {% endblock %}
