@@ -1,16 +1,28 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+<h3><a href="{% url 'songs:create' %}">Add a New Song</a></h3>
+
+
 <table>
     <tr>
         <th>Title</th>
-        <th>Artist</th> 
+        <th>Artist</th>
         <th>Date</th>
     </tr>
-    
+
     {% for song in songs %}
         <tr>
             <td>{{ song.title }}</td>
             <td>{{ song.artist }}</td>
             <td>{{ song.composition_date }}</td>
+            <td><a href="{% url 'songs:update' pk=song.pk %}">Edit</a></td>
+            <td><a href="{% url 'songs:delete' pk=song.pk %}">Delete</a></td>
         </tr>
     {% endfor %}
-    
-</table> 
+
+</table>
+
+{% endblock %}

@@ -1,20 +1,11 @@
-<body>
-    <header>
-        <h2><a href="{% url 'songs:list' %}">Song List</a></h2>
-    </header>
-</body>
+{% extends "layout.html" %}
 
-<table>
-<tr>
-    <th>Title</th>
-    <th>Artist</th>
-    <th>Date</th>
-</tr>
+{% block content %}
 
-    <tr>
-        <td>{{ song.title }}</td>
-        <td>{{ song.artist }}</td>
-        <td>{{ song.composition_date }}</td>
-    </tr>
+<p>Title: {{ song.title}}</p>
+<p>Artist: {{ song.artist}}</p>
+<p>Date: {{ song.composition_date}}</p>
 
-</table> 
+<a href="{% url 'songs:list' %}">Back to the list!</a>
+
+{% endblock %}
