@@ -11,20 +11,26 @@
     </head>
 
     <body>
-        <header class="main-header">
-          <h2 class="main-logo">Song a Day:</h2>
-          <h2 class="main-nav"><a href="{% url 'songs:list' %}">Song List</a></h2>
-        </header>
+    <div class="page-wrap">
+          <header class="main-header">
+            <h2 class="main-logo">Song a Day:</h2>
+            <h2 class="main-nav"><a href="{% url 'songs:list' %}">Song List</a></h2>
+          </header>
+        <div class="body">
+
 
     {% block content %}{% endblock %}
-
-    <footer>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
 
       <div>
           <p>&copy; 2017 Rogue Middle Child</p>
 
 
       </div>
+
     </footer>
 
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
-
+{% load static from staticfiles %}
 
 
 {% block content %}
-<h3><a href="{% url 'songs:create' %}">Add a New Song</a></h3>
+<h3 id="new-song"><a href="{% url 'songs:create' %}">Add a New Song</a></h3>
 
 
 <table>
@@ -11,6 +11,8 @@
         <th>Title</th>
         <th>Artist</th>
         <th>Date</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
 
     {% for song in songs %}
@@ -18,8 +20,16 @@
             <td>{{ song.title }}</td>
             <td>{{ song.artist }}</td>
             <td>{{ song.composition_date }}</td>
-            <td><a href="{% url 'songs:update' pk=song.pk %}">Edit</a></td>
-            <td><a href="{% url 'songs:delete' pk=song.pk %}">Delete</a></td>
+            <td>
+              <a href="{% url 'songs:update' pk=song.pk %}">
+                <img style="width:25px; height: 25px; padding-left: 3px;" src="{% static 'img/edit-icon.png' %}" />
+              </a>
+            </td>
+            <td>
+              <a href="{% url 'songs:delete' pk=song.pk %}">
+                <img style="width:25px; height: 25px; padding-left: 3px;" src="{% static 'img/delete-icon.png' %}" />
+              </a>
+            </td>
         </tr>
     {% endfor %}
 
