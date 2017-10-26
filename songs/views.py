@@ -17,6 +17,8 @@ class SongListView(ListView):
     context_object_name = 'songs'
     model = models.Song
 
+# Create Views for full CRUD capabilities
+
 class SongDetailView(DetailView):
     model = models.Song
 
@@ -31,4 +33,3 @@ class SongUpdateView(UpdateView):
 class SongDeleteView(DeleteView):
     model = models.Song
     success_url = reverse_lazy("songs:list")
-       
