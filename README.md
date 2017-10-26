@@ -11,6 +11,7 @@ How to Run:
 included here:
 
 https://www.python.org/downloads/
+
 https://www.djangoproject.com/download/
 
 2. Clone or download the project files onto your local computer.
