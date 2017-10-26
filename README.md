@@ -20,7 +20,7 @@ https://www.djangoproject.com/download/
 
 4. Run the following command: python manage.py runserver (or python3 manage.py runserver)
 
-5. After running the server, you should be able to see the IP and port (i.e. http://127.0.0.1:8000/).  Copy and paste this address
+5. After running the server, you should be able to see the address and port (i.e. http://127.0.0.1:8000/).  Copy and paste this address
 into your browser and press ENTER.  You should now be running the website in your browser.
 
 If you have any questions, feel free to contact me at rk@roguemiddlechild.com or visit my site at www.roguemiddlechild.com.
