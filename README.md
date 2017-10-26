@@ -2,6 +2,7 @@
 Python project for Code Louisville September 2017 - A "Song of the Day" catalog
 
 Purpose:
+
 The purpose of this project is to create a catalog of songs that will eventually be used for a "Song of the Day" app.  This site would be
 used primarily as an administrator site, but for now is open for full CRUD capabilities to all users.
 
